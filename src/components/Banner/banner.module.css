@@ -1,0 +1,11 @@
+.root {
+    composes: h-screen from global;
+    composes: mx-auto from global;
+    background-color: #f1ece4;
+}
+
+.title {
+    composes: text-5xl from global;
+    composes: content-center from global;
+    composes: h-full from global;
+}

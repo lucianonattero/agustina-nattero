@@ -1,0 +1,54 @@
+.root {
+    composes: bg-primary from global;
+}
+
+.container {
+    composes: flex from global;
+    composes: flex-col from global;
+    composes: justify-center from global;
+    composes: items-center from global;
+    composes: max-w-screen-lg from global;
+    composes: mx-auto from global;
+}
+
+.topic {
+    composes: flex from global;
+    composes: direction-row from global;
+    composes: gap-8 from global;
+    composes: my-8 from global;
+}
+
+.image {
+    composes: w-96 from global;
+    composes: object-cover from global;
+    composes: h-auto from global;
+    composes: col-start-1 from global;
+}
+
+.content {
+    composes: grid from global;
+    composes: gap-4 from global;
+    composes: col-start-2 from global;
+    composes: content-center from global;
+    composes: text-left from global;
+    composes: px-4 from global;
+}
+
+.text {
+    composes: uppercase from global;
+    composes: text-black from global;
+}
+
+.title {
+    composes: text;
+    composes: text-xl from global;
+    composes: font-bold from global;
+}
+
+.btnCommercial {
+    composes: btn-primary from global;
+}
+
+.container > div:nth-child(2n) {
+    flex-direction: row-reverse;
+}

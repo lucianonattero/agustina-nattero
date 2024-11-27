@@ -1,0 +1,20 @@
+.root {
+    composes: bg-primary from global;
+    composes: py-8 from global;
+}
+
+.container {
+    composes: container from global;
+    composes: grid from global;
+    composes: justify-items-center from global;
+    composes: mx-auto from global;
+}
+
+.image {
+
+}
+
+.description {
+    composes: text-justify from global;
+    composes: py-4 from global;
+}

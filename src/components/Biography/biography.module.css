@@ -1,0 +1,51 @@
+.root {
+    composes: bg-primary from global;
+}
+
+.container {
+    composes: container from global;
+    composes: grid from global;
+    composes: grid-cols-4 from global;
+    composes: py-8 from global;
+    composes: gap-4 from global;
+    /* composes: grid-rows-2 from global; */
+    /* grid-template-areas: 
+            "contentImage contentImage sidebar"
+            "contentImage contentImage sidebar"
+            "contentDescription contentDescription featureImage"; */
+}
+
+.sidebar {
+    /* grid-area: sidebar; */
+    composes: col-span-1 from global;
+    composes: p-8 from global;
+    /* composes: row-start-1 from global; */
+}
+
+.content {
+    /* grid-area: contentImage; */
+    /* composes: row-start-1 from global; */
+    composes: col-span-3 from global;
+    /* composes: col-end-3 from global; */
+}
+
+.image {
+    composes: rounded-xl from global;
+}
+
+.contentDescription {
+    /* grid-area: contentDescription; */
+    /* composes: col-start-1 from global;
+    composes: col-end-3 from global;
+    composes: row-span-1 from global; */
+}
+
+.featureImage {
+    /* composes: col-start-4 from global;
+    composes: row-span-1 from global; */
+}
+
+.highlights {
+    composes: text-left from global;
+    composes: mb-4 from global;
+}

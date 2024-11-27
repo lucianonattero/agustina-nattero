@@ -1,0 +1,41 @@
+.root {
+    composes: bg-secondary from global;
+}
+
+.container {
+    composes: container from global;
+    composes: grid from global;
+    composes: text-white from global;
+    composes: justify-self-start from global;
+    composes: py-4 from global;
+
+}
+
+.contentTitle {
+    composes: pb-4 from global;
+}
+
+.socialMedia {
+    composes: flex from global;
+    composes: justify-center from global;
+    composes: gap-4 from global;
+
+}
+
+.divider {
+    composes: max-w-96 from global;
+    composes: mx-auto from global;
+    composes: border-b-4 from global;
+    composes: border-white from global;
+}
+
+.link {
+    composes: bg-white from global;
+    composes: p-2 from global;
+    composes: mx-8 from global;
+    composes: rounded-full from global;
+}
+
+.subTitle {
+    composes: text-2xl from global;
+}
